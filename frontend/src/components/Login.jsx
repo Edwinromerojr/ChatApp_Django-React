@@ -47,7 +47,7 @@ const Login = () => {
       </div>
       <div className="mt-3">
         <Button variant="contained" onClick={handleFormSubmit}>
-          Register
+          Login
         </Button>
       </div>
     </div>
