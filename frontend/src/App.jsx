@@ -7,19 +7,27 @@ import Sidebar from "./components/Sidebar";
 
 function App() {
   return (
-    <>
-      <div className="chat-container">
-        <Sidebar />
-        <ChatArea />
-      </div>
-    </>
-    // <BrowserRouter>
-    //   <Navigate />
-    //   <Routes>
-    //     <Route path='/login' element={<Login />} />
-    //     <Route path='/register' element={<Register />} />
-    //   </Routes>
-    // </BrowserRouter>
+    // <>
+    //   <div className="chat-container">
+    //     <Sidebar />
+    //     <ChatArea />
+    //   </div>
+    // </>
+    <BrowserRouter>
+      <Navigate />
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route
+          path="/chat"
+          element={
+            <>
+              <Sidebar /> <ChatArea />
+            </>
+          }
+        />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
